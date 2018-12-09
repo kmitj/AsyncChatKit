@@ -10,6 +10,7 @@
 		D7148E3D21BD3B2300D45B47 /* AsyncChatKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7148E3321BD3B2300D45B47 /* AsyncChatKit.framework */; };
 		D7148E4221BD3B2300D45B47 /* AsyncChatKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7148E4121BD3B2300D45B47 /* AsyncChatKitTests.swift */; };
 		D7148E4421BD3B2300D45B47 /* AsyncChatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D7148E3621BD3B2300D45B47 /* AsyncChatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7148E4F21BD3F5800D45B47 /* ACKssssss.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7148E4E21BD3F5800D45B47 /* ACKssssss.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D7148E3C21BD3B2300D45B47 /* AsyncChatKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncChatKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7148E4121BD3B2300D45B47 /* AsyncChatKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncChatKitTests.swift; sourceTree = "<group>"; };
 		D7148E4321BD3B2300D45B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7148E4E21BD3F5800D45B47 /* ACKssssss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACKssssss.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,7 @@
 		D7148E2921BD3B2300D45B47 = {
 			isa = PBXGroup;
 			children = (
-				D7148E3521BD3B2300D45B47 /* AsyncChatKit */,
+				D7148E3521BD3B2300D45B47 /* Sources */,
 				D7148E4021BD3B2300D45B47 /* AsyncChatKitTests */,
 				D7148E3421BD3B2300D45B47 /* Products */,
 			);
@@ -68,12 +70,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7148E3521BD3B2300D45B47 /* AsyncChatKit */ = {
+		D7148E3521BD3B2300D45B47 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				D7148E4D21BD3BAC00D45B47 /* Supporting */,
+				D7148E4E21BD3F5800D45B47 /* ACKssssss.swift */,
 			);
-			path = AsyncChatKit;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		D7148E4021BD3B2300D45B47 /* AsyncChatKitTests */ = {
@@ -156,6 +159,7 @@
 				TargetAttributes = {
 					D7148E3221BD3B2300D45B47 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					D7148E3B21BD3B2300D45B47 = {
 						CreatedOnToolsVersion = 10.1;
@@ -202,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7148E4F21BD3F5800D45B47 /* ACKssssss.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -334,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -349,6 +354,7 @@
 		D7148E4821BD3B2300D45B47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -366,6 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kmi.AsyncChatKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -374,6 +381,7 @@
 		D7148E4921BD3B2300D45B47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -399,6 +407,7 @@
 		D7148E4B21BD3B2300D45B47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8A7668SF83;
 				INFOPLIST_FILE = AsyncChatKitTests/Info.plist;
@@ -417,6 +426,7 @@
 		D7148E4C21BD3B2300D45B47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8A7668SF83;
 				INFOPLIST_FILE = AsyncChatKitTests/Info.plist;
